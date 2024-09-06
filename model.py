@@ -72,5 +72,5 @@ def get_recommendations(title, cosine_sim=cosine_sim):
     # Return the top 10 most similar movies
     return df2['title'].iloc[movie_indices]
 
-input = 
-print(get_recommendations('The Dark Knight Rises'))
+inp = input("Enter the name of the movie you want to find similar items for: ")
+print(get_recommendations(inp))
